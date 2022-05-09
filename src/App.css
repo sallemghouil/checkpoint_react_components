@@ -1,0 +1,99 @@
+.App {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  padding: 0 20px;
+}
+
+.card {
+  display: flex;
+  width: 600px;
+  height: auto;
+  background-color: #412977;
+  border-radius: 10px;
+  transition: .4s ease;
+  box-shadow: 1px 1px 30px 1px rgba(0, 0, 0, 0.2);
+}
+
+
+.header img {
+  height: 150px;
+  width: 150px;
+  border: 15px solid #2f2969;
+  border-radius: 50%;
+  transition: .5s ease;
+}
+
+.header img:hover{
+    height: 160px;
+    width: 160px; 
+    transition: .5s ease;
+}
+
+.header,
+.description {
+  padding: 30px;
+  text-align: right;
+  direction: ltr;
+}
+
+.description h2 {
+  font-size: 20px;
+}
+
+.description h4 {
+  font-size: 16px;
+  margin-top: -5px;
+  color: #b4b5be;
+}
+
+.description p {
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.description .social {
+  margin-top: 30px;
+}
+
+.social ul {
+  display: flex;
+  list-style: none;
+}
+
+.description .social a {
+  text-decoration: none;
+  margin-left: 50px;
+  color: #b4b5be;
+}
+
+.social .color {
+  color: #ed1b73;
+}
+
+/* Responsive design */
+@media (max-width: 640px) {
+  .card {
+    display: block;
+    width: 300px;
+  }
+
+  .description h2 {
+    margin-top: -35px;
+  }
+
+  .card .header,
+  .description {
+    text-align: center;
+  }
+
+  .social a {
+    display: block;
+    text-align: center;
+  }
+}
